@@ -22,7 +22,7 @@
       content="initial-scale=1, maximum-scale=1"
    >
    <!-- site metas -->
-   <title>Beautiflie</title>
+   <title>Beauty life</title>
    <meta
       name="keywords"
       content=""
@@ -92,6 +92,9 @@
       rel="stylesheet"
       type="text/css"
    />
+   <!-- add tailwind and daisyui -->
+   <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
@@ -108,24 +111,26 @@
                   class="closebtn"
                   onclick="closeNav()"
                >&times;</a>
-               <a href="index.html">Home</a>
-               <a href="products.html">Products</a>
-               <a href="about.html">About</a>
-               <a href="client.html">Client</a>
-               <a href="contact.html">Contact</a>
+               <a href="index.html">Trang chủ</a>
+               <a href="products.html">Sản phẩm</a>
+               <a href="about.html">Về chúng tôi</a>
+               <a href="client.html">Khách hàng</a>
+               <a href="contact.html">Liên hệ</a>
             </div>
             <span
                class="toggle_icon"
                onclick="openNav()"
             ><img src="images/toggle-icon.png"></span>
-            <a
-               class="logo"
-               href="index.html"
-            ><img src="images/logo.png"></a></a>
-            <form class="form-inline ">
+            <a href="index.html">
+               <div class="logo banner_taital text-3xl leading-none">Beauty life</div>
+            </a>
+            <form class="form-inline">
                <div class="login_text">
                   <ul>
-                     <li><a href="#"><img src="images/user-icon.png"></a></li>
+                     <li><a href="#"><img
+                              class="h-max-px"
+                              src="images/user-icon.png"
+                           ></a></li>
                      <li><a href="#"><img src="images/bag-icon.png"></a></li>
                      <li><a href="#"><img src="images/search-icon.png"></a></li>
                   </ul>
@@ -148,9 +153,9 @@
                   <div class="row">
                      <div class="col-sm-6">
                         <h1 class="banner_taital">Beauty <br>Kit</h1>
-                        <p class="banner_text">Ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                           nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                        <div class="read_bt"><a href="#">Buy Now</a></div>
+                        <p class="banner_text">Chúng tôi mang đến cho bạn thế giới mỹ phẩm cao cấp và đa dạng, được tuyển chọn kỹ lưỡng từ những
+                           thương hiệu uy tín hàng đầu</p>
+                        <div class="read_bt"><a href="#">Mua ngay</a></div>
                      </div>
                      <div class="col-sm-6">
                         <div class="banner_img"><img src="images/banner-img.png"></div>
@@ -163,9 +168,9 @@
                   <div class="row">
                      <div class="col-sm-6">
                         <h1 class="banner_taital">Beauty <br>Kit</h1>
-                        <p class="banner_text">Ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                           nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                        <div class="read_bt"><a href="#">Buy Now</a></div>
+                        <p class="banner_text">Với tâm niệm "Sắc đẹp là chìa khóa cho sự tự tin", chúng tôi cam kết cung cấp cho bạn những sản
+                           phẩm chất lượng, an toàn và hiệu quả nhất, giúp bạn tôn vinh vẻ đẹp tiềm ẩn và tỏa sáng rạng ngời mỗi ngày</p>
+                        <div class="read_bt"><a href="#">Mua ngay</a></div>
                      </div>
                      <div class="col-sm-6">
                         <div class="banner_img"><img src="images/banner-img.png"></div>
@@ -178,9 +183,9 @@
                   <div class="row">
                      <div class="col-sm-6">
                         <h1 class="banner_taital">Beauty <br>Kit</h1>
-                        <p class="banner_text">Ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                           nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                        <div class="read_bt"><a href="#">Buy Now</a></div>
+                        <p class="banner_text">Chúng tôi luôn cập nhật giá cả sản phẩm một cách thường xuyên để đảm bảo mang đến cho bạn mức giá
+                           tốt nhất thị trường.</p>
+                        <div class="read_bt"><a href="#">Mua ngay</a></div>
                      </div>
                      <div class="col-sm-6">
                         <div class="banner_img"><img src="images/banner-img.png"></div>
@@ -193,9 +198,9 @@
                   <div class="row">
                      <div class="col-sm-6">
                         <h1 class="banner_taital">Beauty <br>Kit</h1>
-                        <p class="banner_text">Ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                           nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                        <div class="read_bt"><a href="#">Buy Now</a></div>
+                        <p class="banner_text">Chúng tôi cam kết giao hàng đến tay bạn trong thời gian ngắn nhất, đảm bảo sản phẩm luôn được bảo
+                           quản nguyên vẹn và chất lượng tốt nhất.</p>
+                        <div class="read_bt"><a href="#">Mua ngay</a></div>
                      </div>
                      <div class="col-sm-6">
                         <div class="banner_img"><img src="images/banner-img.png"></div>
@@ -212,9 +217,8 @@
       <div class="container">
          <div class="row">
             <div class="col-sm-12">
-               <h1 class="product_taital">Our Products</h1>
-               <p class="product_text">incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                  nostrud exercitation</p>
+               <h1 class="product_taital">Sản phẩm</h1>
+               <p class="product_text">Đáp ứng mọi nhu cầu chăm sóc da, trang điểm và làm đẹp</p>
             </div>
          </div>
          <div class="product_section_2 layout_padding">
@@ -230,8 +234,8 @@
                      <div class="btn_main">
                         <div class="buy_bt">
                            <ul>
-                              <li class="active"><a href="#">Buy Now</a></li>
-                              <li><a href="#">Buy Now</a></li>
+                              <li class="active"><a href="#">Mua ngay</a></li>
+                              <li><a href="#">Mua ngay</a></li>
                            </ul>
                         </div>
                         <h3 class="price_text">Price $30</h3>
@@ -249,8 +253,8 @@
                      <div class="btn_main">
                         <div class="buy_bt">
                            <ul>
-                              <li class="active"><a href="#">Buy Now</a></li>
-                              <li><a href="#">Buy Now</a></li>
+                              <li class="active"><a href="#">Mua ngay</a></li>
+                              <li><a href="#">Mua ngay</a></li>
                            </ul>
                         </div>
                         <h3 class="price_text">Price $30</h3>
@@ -268,8 +272,8 @@
                      <div class="btn_main">
                         <div class="buy_bt">
                            <ul>
-                              <li class="active"><a href="#">Buy Now</a></li>
-                              <li><a href="#">Buy Now</a></li>
+                              <li class="active"><a href="#">Mua ngay</a></li>
+                              <li><a href="#">Mua ngay</a></li>
                            </ul>
                         </div>
                         <h3 class="price_text">Price $30</h3>
@@ -287,8 +291,8 @@
                      <div class="btn_main">
                         <div class="buy_bt">
                            <ul>
-                              <li class="active"><a href="#">Buy Now</a></li>
-                              <li><a href="#">Buy Now</a></li>
+                              <li class="active"><a href="#">Mua ngay</a></li>
+                              <li><a href="#">Mua ngay</a></li>
                            </ul>
                         </div>
                         <h3 class="price_text">Price $30</h3>
@@ -308,8 +312,8 @@
                      <div class="btn_main">
                         <div class="buy_bt">
                            <ul>
-                              <li class="active"><a href="#">Buy Now</a></li>
-                              <li><a href="#">Buy Now</a></li>
+                              <li class="active"><a href="#">Mua ngay</a></li>
+                              <li><a href="#">Mua ngay</a></li>
                            </ul>
                         </div>
                         <h3 class="price_text">Price $30</h3>
@@ -327,8 +331,8 @@
                      <div class="btn_main">
                         <div class="buy_bt">
                            <ul>
-                              <li class="active"><a href="#">Buy Now</a></li>
-                              <li><a href="#">Buy Now</a></li>
+                              <li class="active"><a href="#">Mua ngay</a></li>
+                              <li><a href="#">Mua ngay</a></li>
                            </ul>
                         </div>
                         <h3 class="price_text">Price $30</h3>
@@ -346,8 +350,8 @@
                      <div class="btn_main">
                         <div class="buy_bt">
                            <ul>
-                              <li class="active"><a href="#">Buy Now</a></li>
-                              <li><a href="#">Buy Now</a></li>
+                              <li class="active"><a href="#">Mua ngay</a></li>
+                              <li><a href="#">Mua ngay</a></li>
                            </ul>
                         </div>
                         <h3 class="price_text">Price $30</h3>
@@ -365,8 +369,8 @@
                      <div class="btn_main">
                         <div class="buy_bt">
                            <ul>
-                              <li class="active"><a href="#">Buy Now</a></li>
-                              <li><a href="#">Buy Now</a></li>
+                              <li class="active"><a href="#">Mua ngay</a></li>
+                              <li><a href="#">Mua ngay</a></li>
                            </ul>
                         </div>
                         <h3 class="price_text">Price $30</h3>
@@ -386,8 +390,8 @@
                      <div class="btn_main">
                         <div class="buy_bt">
                            <ul>
-                              <li class="active"><a href="#">Buy Now</a></li>
-                              <li><a href="#">Buy Now</a></li>
+                              <li class="active"><a href="#">Mua ngay</a></li>
+                              <li><a href="#">Mua ngay</a></li>
                            </ul>
                         </div>
                         <h3 class="price_text">Price $30</h3>
@@ -405,8 +409,8 @@
                      <div class="btn_main">
                         <div class="buy_bt">
                            <ul>
-                              <li class="active"><a href="#">Buy Now</a></li>
-                              <li><a href="#">Buy Now</a></li>
+                              <li class="active"><a href="#">Mua ngay</a></li>
+                              <li><a href="#">Mua ngay</a></li>
                            </ul>
                         </div>
                         <h3 class="price_text">Price $30</h3>
@@ -424,8 +428,8 @@
                      <div class="btn_main">
                         <div class="buy_bt">
                            <ul>
-                              <li class="active"><a href="#">Buy Now</a></li>
-                              <li><a href="#">Buy Now</a></li>
+                              <li class="active"><a href="#">Mua ngay</a></li>
+                              <li><a href="#">Mua ngay</a></li>
                            </ul>
                         </div>
                         <h3 class="price_text">Price $30</h3>
@@ -443,8 +447,8 @@
                      <div class="btn_main">
                         <div class="buy_bt">
                            <ul>
-                              <li class="active"><a href="#">Buy Now</a></li>
-                              <li><a href="#">Buy Now</a></li>
+                              <li class="active"><a href="#">Mua ngay</a></li>
+                              <li><a href="#">Mua ngay</a></li>
                            </ul>
                         </div>
                         <h3 class="price_text">Price $30</h3>
