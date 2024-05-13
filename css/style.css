@@ -668,6 +668,12 @@ button {
     text-align: center;
 }
 
+.avatar {
+    height: 200px;
+    width: auto;/*maintain aspect ratio*/
+    max-width: 500px;
+}
+
 #main_slider a.carousel-control-prev {
     left: -60px;
     top: 360px;
